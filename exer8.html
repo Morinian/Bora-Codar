@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Martins de Souza</title>
+</head>
+<body>
+    
+    <script>
+       alert("**Digite as notas**");     
+
+      let n1 = parseFloat(prompt("Digite o numero 1"));         
+      let n2 = parseFloat(prompt("Digite o numero 2"));        
+      let n3 = parseFloat(prompt("Digite o numero 3"));       
+      let n4 = parseFloat(prompt("Digite o numero 4"));     
+        
+        document.write("<h1>O seu maior numero</br></h1>");         
+               
+          if (n1>0 && n1<=10 && n2>0 && n2<=10 && n3>0 && n3<=10 && n4>0 && n4<=10 ){              
+                let media = (n1+n2+n3+n4)/4    
+
+                if (media>5){                 
+                  document.write("Você passou no teste" );             
+                }else{                
+                  document.write("Tente novamente" );             
+                }         
+                
+          }else{                          
+            document.write("Numero errado" );         
+          }
+    </script>
+
+</body>
+</html>
