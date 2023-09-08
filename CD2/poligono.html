@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Martins de Souza</title>
+</head>
+<body>
+    
+    <script>
+        let pol = parseFloat(prompt("Digite lados"));
+        let med = parseFloat(prompt("Digite a medida"));
+      
+        let result
+
+        if(pol==3){
+           result = med*3
+
+           document.write("Triangulo - o Valor do perimetro é "+ result);
+        }else if (pol==4){
+
+            result = med*med
+            document.write("Quadrado - o Valor do perimetro é" + result);
+
+        }else if (pol==5){
+
+            document.write("Pentagono");
+
+        }else if (pol<3){
+
+            document.write("Não é um poligono");
+
+        }else if(pol>5){
+            document.write("poligono não identificado");
+        }
+    
+    </script>
+
+</body>
+</html>
