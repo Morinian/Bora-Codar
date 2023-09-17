@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Martins de Souza</title>
+</head>
+
+<body>
+    <script>
+
+        let n1 = parseInt(prompt("Informe um numero"));
+        let n2 = parseInt(prompt("Informe segundo numero"));
+
+        var soma = 0;
+        var qtas = 0;
+
+        for(let inteiro = n1; inteiro <= n2; inteiro++){
+            soma = soma + inteiro;
+            qtas = qtas + 1;
+        }
+
+        var divisao = soma/qtas;
+        
+        document.write("O valor da divisão é: " + divisao);
+
+    </script>
+
+</body>
+
+</html>

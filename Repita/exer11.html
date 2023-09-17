@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Martins de Souza</title>
+</head>
+<body>
+    <script>
+
+        let d = 0;
+        let f = 0;
+
+        for (let i = 1; i <= 10; i++) {
+        let valor = parseInt(prompt("digite o " + i + " valor"));
+        
+        if (valor >= 24 && valor <= 42) {
+            d++;
+        } else {
+            f++;
+        }
+        }
+
+        document.write("Valores dentro do intervalo:" + d + "<br>");
+        document.write("Valores fora do intervalo:" + f);
+  
+    </script>
+</body>
+</html>

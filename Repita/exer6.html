@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Martins de Souza</title>
+</head>
+<body>
+    
+    <script>
+
+      let cont = 0
+
+      for (let resp = "S"; resp == "S";) {
+       
+        let n1 = parseFloat(prompt("Digite nota 1"));
+        let n2 = parseFloat(prompt("Digite nota 2"));
+        
+        let resul = 0
+        resul = (n1+n2)/2
+        
+        if (resul <= 9){
+            alert("Aprovado: " + resul)
+            cont++
+        }else{
+            alert("Reprovado: "+ resul)
+        }
+        
+        resp = prompt("Deseja ver outra média? digite S ou N");
+      }
+        
+      document.write("Numero de aprovados: " + cont)
+    </script>
+
+</body>
+</html>
