@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+
+</head>
+
+<body>
+    <div>
+
+        <script defer>
+            let hotel = prompt("Qual nome do hotel? ");
+
+            alert("O nome do hotel é " + hotel);
+
+            document.write("<h1> " + hotel + " </h1>");
+        </script>
+
+        <div>
+
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <br>
+
+            <input type="password" name="senha" id="senha" placeholder="Digite a senha">
+            <h2>Qual modolo deseja acessar?</h2>
+
+            <br>
+
+            <div>
+                <input type="radio" id="reserva" name="opcao" value="Reserva de Quartos">
+                <label for="reserva">Reserva de Quartos</label>
+            </div>
+
+            <div>
+                <input type="radio" id="cad-hosp" name="opcao" value="Cadastro de Hospede">
+                <label for="cad-hosp">Cadastro de Hospede</label>
+            </div>
+
+            <div>
+                <input type="radio" id="cad-hosp2" name="opcao" value="Cadastro de Hospede 2">
+                <label for="cad-hosp2">Cadastro de Hospede 2</label>
+            </div>
+
+            <div>
+                <input type="radio" id="eventos" name="opcao" value="Eventos">
+                <label for="eventos">Eventos</label>
+            </div>
+
+            <div>
+                <input type="radio" id="buffet" name="opcao" value="Buffet">
+                <label for="buffet">Buffet</label>
+            </div>
+
+            <div>
+                <input type="radio" id="auditorio" name="opcao" value="Auditorio">
+                <label for="auditorio">Auditório</label>
+            </div>
+
+            <div>
+                <input type="radio" id="restaurante" name="opcao" value="Reserva do Restaurante">
+                <label for="restaurante">Reserva do Restaurante</label>
+            </div>
+
+            <div>
+                <input type="radio" id="carro" name="opcao" value="Carro">
+                <label for="carro">Carro do Hotel</label>
+            </div>
+
+
+
+            <div>
+                <input type="radio" id="arcondicionado" name="opcao" value="ArCondicionado">
+                <label for="arcondicionado">Ar-Condicionado</label>
+
+            </div>
+
+
+
+            <br>
+
+            <button onclick=Validar()>Validar</button>
+
+            <br>
+
+            <button onclick=FechaPagina()>Sair</button>
+
+        </div>
+    </div>
+
+
+
+    <script>
+
+
+
+        function Validar() {
+
+
+
+            let nome = document.getElementById("nome").value;
+
+            let senha = document.getElementById("senha").value;
+
+            let opcao = document.querySelector('input[name="opcao"]:checked').value;
+
+
+
+
+
+            if (senha == "2678") {
+
+                alert(`Bem vindo ao Hotel ${hotel}, ${nome}. É um imenso prazer ter você por aqui!`);
+
+                switch (opcao) {
+
+                    case "Reserva de Quartos":
+
+                        window.location.href = "reservaquartos.html";
+
+                        break;
+
+                    case "Cadastro de Hospede":
+
+                        window.location.href = "cadhosp.html";
+
+                        break;
+
+                    case "Cadastro de Hospede 2":
+
+                        window.location.href = "cadhosp2.html";
+
+                        break;
+
+                    case "Eventos":
+
+                        window.location.href = "eventos.html";
+
+                        break;
+
+                    case "Buffet":
+
+                        window.location.href = "buffet.html";
+
+                        break;
+
+                    case "Auditorio":
+
+                        window.location.href = "auditorio.html";
+
+                        break;
+
+                    case "Reserva do Restaurante":
+
+                        window.location.href = "reservrest.html";
+
+                        break;
+
+                    case "Carro":
+
+                        window.location.href = "carro.html";
+
+                        break;
+
+                    case "ArCondicionado":
+
+                        window.location.href = "arcond.html";
+
+                        break;
+
+                    default:
+
+                        alert("Opção inválida");
+                }
+
+            } else {
+                alert("Senha errada");
+            }
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+        function FechaPagina() {
+            alert("Muito obrigado e até logo, ");
+        }
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>
